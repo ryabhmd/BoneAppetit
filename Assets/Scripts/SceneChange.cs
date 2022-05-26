@@ -8,6 +8,9 @@ public class SceneChange : MonoBehaviour
     // SWITCH TO LEVEL 2
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(1);
+        if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }

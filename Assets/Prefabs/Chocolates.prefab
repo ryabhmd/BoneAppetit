@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4030193396085406835}
   - component: {fileID: 4030193396085406832}
   - component: {fileID: -9019120817469630721}
-  - component: {fileID: -4462515761245561448}
   m_Layer: 0
   m_Name: Chocolates
   m_TagString: Untagged
@@ -86,19 +85,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &-9019120817469630721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4030193396085406833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28f8d421732d54bdb8bfe4342e13fdb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _enemySpeed: 6
---- !u!114 &-4462515761245561448
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
