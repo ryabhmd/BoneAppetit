@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using TMPro;
 
 
-namespace TMPro.Examples
+namespace TextMesh_Pro.Examples___Extras.Scripts
 {
     
-    public class TMPro_InstructionOverlay : MonoBehaviour
+    public class TMProInstruction : MonoBehaviour
     {
 
         public enum FpsCounterAnchorPositions { TopLeft, BottomLeft, TopRight, BottomRight };

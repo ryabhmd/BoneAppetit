@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private GameObject _enemyPrefab;
 
-    private float _delay = 10f;
+    private float _delay = 3f;
     private bool _alive = true;
 	private bool _win = false;
 	[SerializeField]
@@ -42,7 +42,7 @@ public class SpawnManager : MonoBehaviour
         // SPAWNING
         while (_alive && !_win)
         {
-            Instantiate(_enemyPrefab, new Vector3(Random.Range(-20f, 8f), 20f, 0), Quaternion.identity, this.transform);
+            Instantiate(_enemyPrefab, new Vector3(Random.Range(-20f, 8f), 20f, 0f), Quaternion.identity, this.transform);
             yield return new WaitForSeconds(_delay);
         }
 

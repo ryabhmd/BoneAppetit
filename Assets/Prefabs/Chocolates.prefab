@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4030193396085406835}
   - component: {fileID: 4030193396085406832}
   - component: {fileID: -9019120817469630721}
+  - component: {fileID: 6371550749910385616}
   m_Layer: 0
   m_Name: Chocolates
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,14 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4030193396085406833}
-  m_LocalRotation: {x: -0.40702242, y: -0, z: -0, w: 0.9134182}
-  m_LocalPosition: {x: -8.481903, y: -4.204312, z: 0.05324331}
-  m_LocalScale: {x: 8.192998, y: 6.4405107, z: 5.0925694}
+  m_LocalRotation: {x: -0.47545528, y: -0, z: -0, w: 0.87973994}
+  m_LocalPosition: {x: -8.481903, y: -4.209, z: 0.05324331}
+  m_LocalScale: {x: 8.048146, y: 6.3266425, z: 5.002533}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -48.036, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -56.778, y: 0, z: 0}
 --- !u!33 &4030193396085406835
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -97,3 +98,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemySpeed: 6
+--- !u!65 &6371550749910385616
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4030193396085406833}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25262976, y: 0.09083333, z: 0.27146977}
+  m_Center: {x: 0.00287365, y: 0.047783807, z: 0.0037579685}

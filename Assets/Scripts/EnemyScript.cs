@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     [SerializeField]
-    private float _enemySpeed = 6f; 
+    private float _enemySpeed = 6f;
     
     // Start is called before the first frame update
     void Start()
@@ -19,10 +19,11 @@ public class EnemyScript : MonoBehaviour
         // MOVEMENT
         transform.Translate(Vector3.down * _enemySpeed * Time.deltaTime);
 
-        // TRANPORT BACK TO START
+        // TRANSPORT BACK TO START
         if(transform.position.y < -4.5)
         {
             transform.position = new Vector3(Random.Range(-10f, 10f), 10f, 0f);
+			
         }
     }
 
