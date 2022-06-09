@@ -27,7 +27,6 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] 
     private DoggoScript _doggo;
 
-    
     // -- for counting damage
     private int _lives = 3;
 
@@ -36,7 +35,7 @@ public class PlayerScript : MonoBehaviour
     private MaterialPropertyBlock _mpb;
     
     [SerializeField]
-    private GameObject _spawnManager;
+    private SpawnManager _spawnManager;
     
     [SerializeField]
     private UIManager _uiManager;
@@ -57,6 +56,9 @@ public class PlayerScript : MonoBehaviour
             _mpb.Clear();
             this.GetComponent<Renderer>().GetPropertyBlock(_mpb);
         }
+        
+        // instantiate spawn manager GameObject
+        _spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
     }
 
     
@@ -90,7 +92,7 @@ public class PlayerScript : MonoBehaviour
             // STOP SPAWNING
             if (_spawnManager != null)
             {
-                _spawnManager.GetComponent<SpawnManager>().onPlayerDeath();
+                _spawnManager.onPlayerDeath();
                 Destroy(this.gameObject);
             }
             else

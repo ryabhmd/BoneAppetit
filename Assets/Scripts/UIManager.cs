@@ -19,7 +19,7 @@ public class UIManager : MonoBehaviour
 
 	public void gameOver()
 	{
-		_statustext.text = "Game Over! :(";
+		_statustext.text = "Game Over";
 	}
 
 	public void win()
