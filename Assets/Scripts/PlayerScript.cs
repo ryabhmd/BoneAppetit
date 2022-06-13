@@ -39,6 +39,7 @@ public class PlayerScript : MonoBehaviour
     
     [SerializeField]
     private UIManager _uiManager;
+    
 
     // Start is called before the first frame update -- only called once
     void Start()
@@ -117,10 +118,6 @@ public class PlayerScript : MonoBehaviour
 
     void PlayerMovement()
     {
-        // Lock the movement on the z-axis
-        Vector3 pos = transform.position;
-        pos.z = 0;
-        transform.position = pos;
         
         // MOVEMENT
         

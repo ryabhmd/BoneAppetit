@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         float moveHorizontal = Input.GetAxisRaw("Horizontal");
         float moveVertical = Input.GetAxisRaw("Vertical");
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, 0);
 
         if (movement != Vector3.zero)
         {
@@ -40,12 +40,6 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.Translate(movement * movementSpeed * Time.deltaTime, Space.World);
-
-        if (Input.GetButtonDown("Jump") && Time.time > canJump)
-        {
-                rb.AddForce(0, jumpForce, 0);
-                canJump = Time.time + timeBeforeNextJump;
-                anim.SetTrigger("jump");
-        }
+        
     }
 }
