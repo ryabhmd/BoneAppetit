@@ -117,6 +117,11 @@ public class PlayerScript : MonoBehaviour
 
     void PlayerMovement()
     {
+        // Lock the movement on the z-axis
+        Vector3 pos = transform.position;
+        pos.z = 0;
+        transform.position = pos;
+        
         // MOVEMENT
         
         // This gets the horizontal input (defined in edit --> input manager in Unity); meaning left+right keys
