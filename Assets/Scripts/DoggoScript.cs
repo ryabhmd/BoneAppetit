@@ -24,4 +24,11 @@ public class DoggoScript : MonoBehaviour
         _mpb.SetColor("_Color", new Color(_colorChannel,0f,0f, 1f));
         this.GetComponent<Renderer>().SetPropertyBlock(_mpb);
     }
+    
+    public void colorChangeHeal()
+    {
+        _colorChannel += 0.5f;
+        _mpb.SetColor("_Color", new Color(_colorChannel,0f,0f, 1f));
+        this.GetComponent<Renderer>().SetPropertyBlock(_mpb);
+    }
 }

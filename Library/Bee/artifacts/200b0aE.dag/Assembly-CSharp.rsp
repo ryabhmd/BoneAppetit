@@ -355,6 +355,7 @@
 "Assets/Scripts/CameraMovement.cs"
 "Assets/Scripts/DoggoScript.cs"
 "Assets/Scripts/EnemyScript.cs"
+"Assets/Scripts/HeartScript.cs"
 "Assets/Scripts/MeatScript.cs"
 "Assets/Scripts/PlayerScript.cs"
 "Assets/Scripts/SceneChange.cs"
