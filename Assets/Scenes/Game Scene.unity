@@ -727,7 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28014a82ca5314e1c8cf2d5bf2c63741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 867331712}
+  target: {fileID: 4343527226095293}
   offset: {x: 0, y: 0, z: 0}
 --- !u!1001 &687358137
 PrefabInstance:
@@ -1758,6 +1758,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!95 &4343527226095307
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828173709}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1282337813445940045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1767,7 +1787,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1178936624561419230, guid: 4027ab5d44c274f5d9fd2729c6f1c1c2, type: 3}
       propertyPath: jumpForce
-      value: 500
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1195817794580018164, guid: 4027ab5d44c274f5d9fd2729c6f1c1c2, type: 3}
       propertyPath: m_Enabled

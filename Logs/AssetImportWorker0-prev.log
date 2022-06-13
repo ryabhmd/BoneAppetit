@@ -1,0 +1,431 @@
+Unity Editor version:    2021.3.2f1 (d6360bedb9a0)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.3.1 (Build 21E258)
+Darwin version:          21.4.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/rayaabuahmad/Documents/BoneAppetit
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54734
+Successfully changed project path to: /Users/rayaabuahmad/Documents/BoneAppetit
+/Users/rayaabuahmad/Documents/BoneAppetit
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 70.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/rayaabuahmad/Documents/BoneAppetit/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 (high power)
+Metal devices available: 1
+0: Apple M1 (high power)
+Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56822
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.2f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001801 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 73.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.422 seconds
+Domain Reload Profiling:
+	ReloadAssembly (422ms)
+		BeginReloadAssembly (69ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (289ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (64ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (180ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (74ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (77ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004313 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/rayaabuahmad/Documents/BoneAppetit/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/rayaabuahmad/Documents/BoneAppetit/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.622 seconds
+Domain Reload Profiling:
+	ReloadAssembly (622ms)
+		BeginReloadAssembly (56ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (12ms)
+		EndReloadAssembly (502ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (170ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (216ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (140ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.2f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3417 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (96.0 KB). Loaded Objects now: 3881.
+Memory consumption went from 232.7 MB to 232.6 MB.
+Total: 2.335750 ms (FindLiveObjects: 0.126666 ms CreateObjectMapping: 0.042167 ms MarkObjects: 2.095791 ms  DeleteObjects: 0.070500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 220694.018276 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(297a8548a1fb64198bfeca183ec9c794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(297a8548a1fb64198bfeca183ec9c794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b62f095292bed5b25fb63c740c3db36c') in 0.506358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.157345 seconds.
+  path: Assets/Prefabs/Chocolates.prefab
+  artifactKey: Guid(ab5e6e6aeb8524c0c835730c246c3c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Chocolates.prefab using Guid(ab5e6e6aeb8524c0c835730c246c3c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fb8b80079956285c4c2c35e46665248') in 0.006452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.852379 seconds.
+  path: Assets/Prefabs/Chocolates.prefab
+  artifactKey: Guid(ab5e6e6aeb8524c0c835730c246c3c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Chocolates.prefab using Guid(ab5e6e6aeb8524c0c835730c246c3c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b205a130ff25fc91411a50ed397368b5') in 0.005744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.868418 seconds.
+  path: Assets/Prefabs/Chocolates.prefab
+  artifactKey: Guid(ab5e6e6aeb8524c0c835730c246c3c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Chocolates.prefab using Guid(ab5e6e6aeb8524c0c835730c246c3c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520ca23bcd503482f121cb7f23a34d65') in 0.005263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 424.519006 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/cake.png
+  artifactKey: Guid(b35d736231b2e43b093a0ee7d5581ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/cake.png using Guid(b35d736231b2e43b093a0ee7d5581ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cb42887384b3efade18397fb09a2537') in 0.390615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/ice-cream.png
+  artifactKey: Guid(3771ccefce5ae4cf38725fe94b8bc953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/ice-cream.png using Guid(3771ccefce5ae4cf38725fe94b8bc953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3bc8070b022c9152b23b457a2f29073') in 0.005428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/donnut.png
+  artifactKey: Guid(92efa643b105f40bf9d382fb606f7e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/donnut.png using Guid(92efa643b105f40bf9d382fb606f7e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca70a685216c02a8ef63442b0d23d4c8') in 0.005174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/heart-lollipop.png
+  artifactKey: Guid(a78235fdfa12444da99f2cb3a2fff577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/heart-lollipop.png using Guid(a78235fdfa12444da99f2cb3a2fff577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a8f443a7582baf6f109a32e5e61e39') in 0.005902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/lollipop.png
+  artifactKey: Guid(3d1663cacc0ae475282d43ac6852872b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/lollipop.png using Guid(3d1663cacc0ae475282d43ac6852872b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '318d8016171a51792eeeabc6d5955eae') in 0.005060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/gum-drops.png
+  artifactKey: Guid(ba2d3b706fdea4f03aa1a27703af58b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/gum-drops.png using Guid(ba2d3b706fdea4f03aa1a27703af58b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '607ef165eeaed5272fadd713245fa1ad') in 0.004753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/muffin.png
+  artifactKey: Guid(01ac43e86ec6d4fee97f8ab281228351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/muffin.png using Guid(01ac43e86ec6d4fee97f8ab281228351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20833b3a1db3a0f773da4eea74798b32') in 0.004476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/sweet-roll.png
+  artifactKey: Guid(1075e5859079545b8a62c3b2f5209a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/sweet-roll.png using Guid(1075e5859079545b8a62c3b2f5209a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06472dc9bb28eb600237f2ed11d26aa0') in 0.005176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/sugar-candy.png
+  artifactKey: Guid(145f4692710704394948250930032e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/sugar-candy.png using Guid(145f4692710704394948250930032e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd782a5418670dd00c9d4bfd0c2652ae') in 0.004358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/cotton-candy.png
+  artifactKey: Guid(0949e9b161aef449a94e4b0eb0d30548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/cotton-candy.png using Guid(0949e9b161aef449a94e4b0eb0d30548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc4bb8c605ac0e761cbe89f85c2f6469') in 0.004227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/cream-cookie.png
+  artifactKey: Guid(9b4881748c4954051b35cb1384027a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/cream-cookie.png using Guid(9b4881748c4954051b35cb1384027a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf46c3451a9e3bcdced0f10a8a2539ba') in 0.004591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/popsicle.png
+  artifactKey: Guid(804dec480996d4603804092a4c13ecd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/popsicle.png using Guid(804dec480996d4603804092a4c13ecd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57174ce8f2fd19000f6037b583b7bb18') in 0.004332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/swiss-roll.png
+  artifactKey: Guid(7c13c870a874549fd9e46a3506c8e5f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png 256x256/swiss-roll.png using Guid(7c13c870a874549fd9e46a3506c8e5f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad002f98fcbd6f3d3d241d4fc56d1353') in 0.004816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.938393 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  cake_stroke.png
+  artifactKey: Guid(799f5875c25094d8dba44a9851499e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  cake_stroke.png using Guid(799f5875c25094d8dba44a9851499e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c73a634653c38314e7e30224ed8e3c7') in 0.010421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  swiss-roll_stroke.png
+  artifactKey: Guid(9d50539b58fb64602b795d40aaf51368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  swiss-roll_stroke.png using Guid(9d50539b58fb64602b795d40aaf51368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fc0a649459a1aac2ca388112a6aa4ed') in 0.008155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  lollipop_stroke.png
+  artifactKey: Guid(28524db5fe42c4923b3ad8f3f4fb742c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  lollipop_stroke.png using Guid(28524db5fe42c4923b3ad8f3f4fb742c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba96bc1e1172e0888493f1fc8af1ebd7') in 0.007031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  muffin_stroke.png
+  artifactKey: Guid(4d5f0dcce5afe4ca081bfbea9286791d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  muffin_stroke.png using Guid(4d5f0dcce5afe4ca081bfbea9286791d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62424df3eadc1f955525ef280379f9ab') in 0.005583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  cotton-candy_stroke.png
+  artifactKey: Guid(08f0363d8c4bc4d7fac08b855cae2516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  cotton-candy_stroke.png using Guid(08f0363d8c4bc4d7fac08b855cae2516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62fad0544f4c8290cb8860326e1295a7') in 0.006034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  sugar-candy_stroke.png
+  artifactKey: Guid(edf8e8f16fef9444bb94de066813ddca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  sugar-candy_stroke.png using Guid(edf8e8f16fef9444bb94de066813ddca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e88c40be22e3e7ca413254e853200c') in 0.005197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  gum-drops_stroke.png
+  artifactKey: Guid(c82c3e28f462747dba18552f9c31b8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  gum-drops_stroke.png using Guid(c82c3e28f462747dba18552f9c31b8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f94cb3e6b3b84b1410b7a010390db61') in 0.005418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  gingerbread-man_stroke.png
+  artifactKey: Guid(86fe3cabe72b14bf1b9092f7821222ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  gingerbread-man_stroke.png using Guid(86fe3cabe72b14bf1b9092f7821222ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1401b476faf5c87b6488fea307dfcb05') in 0.004972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  macaron_stroke.png
+  artifactKey: Guid(0880325b431534468997449729cade2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  macaron_stroke.png using Guid(0880325b431534468997449729cade2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b9649b2ae9794f4c19e71dbf1d96ed') in 0.005171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  popsicle_stroke.png
+  artifactKey: Guid(6c6e19955f5eb434facf992f895ebb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  popsicle_stroke.png using Guid(6c6e19955f5eb434facf992f895ebb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd528f47308b86d3139ae7b34842bb80') in 0.011032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  eclair_stroke.png
+  artifactKey: Guid(c9fc23ba4048c4c1eb49fe0444d22057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  eclair_stroke.png using Guid(c9fc23ba4048c4c1eb49fe0444d22057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1211dee7d1bc812562010165966b0b61') in 0.005051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  jelly_stroke.png
+  artifactKey: Guid(a509f6687e95c402aaff18856411f5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/  jelly_stroke.png using Guid(a509f6687e95c402aaff18856411f5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d8f511f2b5cad2935dc8e54ccf70a5') in 0.004752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.214541 seconds.
+  path: Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/Materials
+  artifactKey: Guid(ca756302ab5334ef186e717f10720a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Delicious Sweet Candies/png stroke 256x256/Materials using Guid(ca756302ab5334ef186e717f10720a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38ec8e0625841e4bda62cb8d000734ea') in 0.001222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1234.168204 seconds.
+  path: Assets/4K_Photogrammetry_Set_Vol.1 PART/Scanned Vegetables MiniPack
+  artifactKey: Guid(b2528859601914d04ad70c221f7edd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4K_Photogrammetry_Set_Vol.1 PART/Scanned Vegetables MiniPack using Guid(b2528859601914d04ad70c221f7edd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae08ab8b784ada0d3b0438e880514136') in 0.001876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.152597 seconds.
+  path: Assets/ExternalAssets/Meshtint Free Boximon Fiery Mega Toon Series/Prefabs/Boximon Fiery.prefab
+  artifactKey: Guid(128a80094e00bf34fa2555766a7eea0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Meshtint Free Boximon Fiery Mega Toon Series/Prefabs/Boximon Fiery.prefab using Guid(128a80094e00bf34fa2555766a7eea0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6afeee3cfaf98810a01367f763fa31b9') in 0.102594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 223.592291 seconds.
+  path: Assets/ExternalAssets/Meshtint Free Boximon Fiery Mega Toon Series/FBX/Boximon Fiery.FBX
+  artifactKey: Guid(9213d9c7c87ed1448b0ca6a582ac8776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Meshtint Free Boximon Fiery Mega Toon Series/FBX/Boximon Fiery.FBX using Guid(9213d9c7c87ed1448b0ca6a582ac8776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23daa314dd8f5d9344a4d84a43b35d01') in 0.107676 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001207 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x285c3f000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/rayaabuahmad/Documents/BoneAppetit/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/rayaabuahmad/Documents/BoneAppetit/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.585 seconds
+Domain Reload Profiling:
+	ReloadAssembly (585ms)
+		BeginReloadAssembly (87ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (441ms)
+			LoadAssemblies (39ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (170ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (180ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (120ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3399 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (73.0 KB). Loaded Objects now: 3930.
+Memory consumption went from 262.2 MB to 262.1 MB.
+Total: 2.475750 ms (FindLiveObjects: 0.157875 ms CreateObjectMapping: 0.043375 ms MarkObjects: 2.193584 ms  DeleteObjects: 0.080000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4038.772729 seconds.
+  path: Assets/ExternalAssets/Meshtint Free Boximon Fiery Mega Toon Series/Animations
+  artifactKey: Guid(11d4a7decf488e243b8c892011a99bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Meshtint Free Boximon Fiery Mega Toon Series/Animations using Guid(11d4a7decf488e243b8c892011a99bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '469601980070a36c83cf61289f94f6ff') in 0.005692 seconds 
