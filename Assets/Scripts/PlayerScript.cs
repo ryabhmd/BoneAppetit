@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour
 
     // -- for time delay when jumping --
     [SerializeField] private float _nextJumpTime = 0f;
-    [SerializeField] private float _coolDownTime = 1f;
+    [SerializeField] private float _coolDownTime = 0.5f;
 
     // -- for the bullet
     [SerializeField] private GameObject _bulletPrefab;
@@ -34,7 +34,6 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField] private UIManager _uiManager;
 
-    [SerializeField] private GameObject _heart;
 
     // Start is called before the first frame update -- only called once
     void Start()

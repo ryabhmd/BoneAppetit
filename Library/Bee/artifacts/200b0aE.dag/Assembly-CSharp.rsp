@@ -358,6 +358,7 @@
 "Assets/Scripts/HeartScript.cs"
 "Assets/Scripts/MeatScript.cs"
 "Assets/Scripts/PlayerScript.cs"
+"Assets/Scripts/RestartScript.cs"
 "Assets/Scripts/SceneChange.cs"
 "Assets/Scripts/SpawnManager.cs"
 "Assets/Scripts/UIManager.cs"

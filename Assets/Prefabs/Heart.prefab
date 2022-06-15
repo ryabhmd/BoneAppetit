@@ -114,7 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAnimated: 1
   isRotating: 1
-  isFloating: 1
+  isFloating: 0
   isScaling: 1
   rotationAngle: {x: 0, y: 0, z: 10}
   rotationSpeed: 10
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000010714891294}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ff967b7ed48f2441bcf509edf6b889a, type: 3}
   m_Name: 

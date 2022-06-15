@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -21,12 +23,12 @@ public class UIManager : MonoBehaviour
 	public void gameOver()
 	{
 		_statustext.text = "Game Over";
-		_restarttext.text = "Press Space to restart";
+		_restarttext.text = "Click here to restart";
 	}
 
 	public void win()
 	{
 		_statustext.text = "You win!! :)";
-		_restarttext.text = "Press Space to restart";
+		_restarttext.text = "Click here to restart";
 	}
 }

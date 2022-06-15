@@ -769,5 +769,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 3
-  jumpForce: 300
+  jumpForce: 200
   timeBeforeNextJump: 1.2
