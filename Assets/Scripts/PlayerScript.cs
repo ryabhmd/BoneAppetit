@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
@@ -114,22 +115,9 @@ public class PlayerScript : MonoBehaviour
     {
 
         // MOVEMENT
-
-        // This gets the horizontal input (defined in edit --> input manager in Unity); meaning left+right keys
-        // if the user presses the right arrow --> the variable will have the value 1 --> we multuply it in the Translate funct below, which makes the object move to the right
-        // if nothing is clicked --> value = 0 --> nothing changes
-        // if left arrow is pressed --> value = -1 --> object moves to the left
+        
         float horizontalInput = Input.GetAxis("Horizontal");
-
-        // deltaTime adjusts the speed to the game rate, makes it run smoother
-        // multiplying by a number will make the player slower or faster (0,5 makes it slower)
         transform.Translate(Vector3.right * Time.deltaTime * _speed * horizontalInput);
-
-        // This code can be used while debugging, it will display an error message in Unity
-        //if (Input.GetKeyDown("e"))
-        //{
-        //    Debug.LogError("e button was pressed");
-        //}
 
         // JUMPING
 
@@ -139,11 +127,6 @@ public class PlayerScript : MonoBehaviour
             _nextJumpTime = Time.time + _coolDownTime;
         }
 
-        // BOUNDARIES (TELEPORT) - if a player falls, automatically teleport it to the starting position
-        if (transform.position.y < -10)
-        {
-            transform.position = new Vector3(0f, 2f, 0f);
-        }
     }
     
     public void Heal(GameObject heart)
