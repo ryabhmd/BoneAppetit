@@ -25,7 +25,8 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private DoggoScript _doggo;
 
     // -- for counting damage
-    private int _lives = 3;
+    public GameObject[] healths;
+    private int _lives;
 
     // -- for changing colors
     private float _colorChannel = 1f;
@@ -40,6 +41,7 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         // UPDATE LIVES
+        _lives = healths.Length;
         _uiManager.UpdateLives(_lives);
 
         // initiate first position
@@ -75,31 +77,35 @@ public class PlayerScript : MonoBehaviour
     public void Damage()
     {
         // UPDATE LIVES 
-        _lives--;
-        _uiManager.UpdateLives(_lives);
-        Debug.Log("Damage -1 Lives: " + _lives);
-
-        // CHANGE MATERIAL 
-        _doggo.colorChange();
-
-        // DEATH
-        if (_lives == 0)
+        if (_lives >= 1)
         {
-            // STOP SPAWNING
-            if (_spawnManager != null)
-            {
-                _spawnManager.onPlayerDeath();
-                Destroy(this.gameObject);
-            }
-            else
-            {
-                Debug.LogError("SpawnManager not assigned");
-            }
+            _lives--;
+            healths[_lives].SetActive(false);
+            _uiManager.UpdateLives(_lives);
+            Debug.Log("Damage -1 Lives: " + _lives);
 
-            delItems();
+            // CHANGE MATERIAL 
+            _doggo.colorChange();
 
+
+            // DEATH
+            if (_lives == 0)
+            {
+                // STOP SPAWNING
+                if (_spawnManager != null)
+                {
+                    _spawnManager.onPlayerDeath();
+                    Destroy(this.gameObject);
+                }
+                else
+                {
+                    Debug.LogError("SpawnManager not assigned");
+                }
+
+                delItems();
+
+            }
         }
-
     }
 
     public void delItems()
@@ -136,6 +142,7 @@ public class PlayerScript : MonoBehaviour
         {
             Destroy(heart);
             _lives++;
+            healths[_lives - 1].SetActive(true);
             _uiManager.UpdateLives(_lives);
             // CHANGE MATERIAL 
             _doggo.colorChangeHeal();
