@@ -9,6 +9,8 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField]
     private Text _livestext;
+    [SerializeField] 
+    private Text _stagestext;
 	[SerializeField]
     private Text _statustext;
     [SerializeField]
@@ -20,11 +22,17 @@ public class UIManager : MonoBehaviour
         _livestext.text = "Lives: " + health;
     }
 
-	public void gameOver()
+	public void UpdateStages(int stage)
 	{
-		_statustext.text = "Game Over";
-		_restarttext.text = "Click here to restart";
+		_stagestext.text = "STAGE " + stage;
 	}
+
+
+	public void gameOver()
+		{
+			_statustext.text = "Game Over";
+			_restarttext.text = "Click here to restart";
+		}
 
 	public void win()
 	{
