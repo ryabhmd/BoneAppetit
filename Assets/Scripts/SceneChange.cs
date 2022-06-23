@@ -5,12 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
-    // SWITCH TO LEVEL 2
+    private Scene currentScene;
+    void Start()
+    {
+        currentScene = SceneManager.GetActiveScene();
+    }
+    // SWITCH TO NEXT STAGE
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(currentScene.buildIndex + 1);
         }
     }
 }
