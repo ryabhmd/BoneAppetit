@@ -10,6 +10,7 @@ public class SceneChange : MonoBehaviour
     {
         currentScene = SceneManager.GetActiveScene();
     }
+    
     // SWITCH TO NEXT STAGE
     private void OnTriggerEnter(Collider other)
     {
