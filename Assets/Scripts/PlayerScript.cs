@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -36,6 +37,8 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField] private UIManager _uiManager;
 
+    private Scene currentScene;
+
 
     // Start is called before the first frame update -- only called once
     void Start()
@@ -65,15 +68,16 @@ public class PlayerScript : MonoBehaviour
     {
         PlayerMovement();
 
-        // SPAWN BULLET
+        // SPAWN HEART BULLET
         if (Input.GetKeyDown(KeyCode.E) && _nextFireTime < Time.time)
         {
-            Instantiate(_bulletPrefab, transform.position + new Vector3(0f, 0.65f, 0f), Quaternion.identity);
+            Instantiate(_bulletPrefab, transform.position + new Vector3(0.65f, 0f, 0f), Quaternion.identity);
             _nextFireTime = Time.time + _coolDownTime;
         }
     }
 
-    // a damage function to be used in EnemyScript when the enemy hits the player
+
+// a damage function to be used in EnemyScript when the enemy hits the player
     public void Damage()
     {
         // UPDATE LIVES 
