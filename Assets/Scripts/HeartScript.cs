@@ -24,7 +24,6 @@ public class HeartScript : MonoBehaviour
         // ADD LIFE if player collides with heart
         if (other.CompareTag("Player"))
         {
-            Debug.Log("entered if");
             _player.Heal(this.GameObject());
         }
     }

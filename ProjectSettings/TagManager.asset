@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - SpawnManager
   - Heart
+  - Catto
   layers:
   - Default
   - TransparentFX

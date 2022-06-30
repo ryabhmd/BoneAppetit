@@ -7,34 +7,44 @@ public class CattoScript : MonoBehaviour
 {
     [SerializeField] private float _cattospeed = 0.5f;
     private bool movingLeft;
-    Animator anim;
     private float initial_position;
+    private PlayerScript _player;
+    Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         movingLeft = true;
         initial_position = transform.position.x;
+        _player = GameObject.Find("Player").GetComponent<PlayerScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        CattoMovement(initial_position);
     }
 
     private void CattoMovement(float initial_position)
     {
+        if (transform.position.x <= initial_position - 3f)
+        {
+            movingLeft = false;
+        }
+
+        if (transform.position.x > initial_position)
+        {
+            movingLeft = true;
+        }
         if (movingLeft)
         {
             transform.Translate(Vector3.back * _cattospeed * Time.deltaTime);
             Vector3 movement = new Vector3(0.1f, 0.0f, 0);
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
-            anim.SetInteger("Walk", 1);
-
-            if (transform.position.x <= initial_position - 1f) movingLeft = false;
+            anim.SetInteger("Walk", 0);
         }
-        else
+        
+        if(!movingLeft)
         {
             transform.Translate(Vector3.forward * _cattospeed * Time.deltaTime);
             Vector3 movement = new Vector3(0.1f, 0.0f, 0);
@@ -42,6 +52,15 @@ public class CattoScript : MonoBehaviour
             anim.SetInteger("Walk", 1);
         }
 
+    }
+    
+    void OnTriggerEnter(Collider other)
+    {
+        // DAMAGE PLAYER if catto hits player
+        if (other.CompareTag("Player"))
+        {
+            _player.Damage();
+        }
     }
 }
 

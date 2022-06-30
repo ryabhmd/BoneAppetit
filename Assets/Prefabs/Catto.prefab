@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: -6792508009268077719}
   m_Layer: 0
   m_Name: Catto
-  m_TagString: Enemy
+  m_TagString: Catto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -279,7 +279,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2659950917031099359}
-  m_LocalRotation: {x: -0, y: -0.86367226, z: -0, w: 0.50405395}
+  m_LocalRotation: {x: -0, y: -0.94730896, z: -0, w: -0.32032132}
   m_LocalPosition: {x: 19.469688, y: 0.8582282, z: 0}
   m_LocalScale: {x: 0.69948, y: 0.69948, z: 0.69948}
   m_ConstrainProportionsScale: 0
@@ -292,7 +292,7 @@ Transform:
   - {fileID: 2657446814430723155}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -119.463, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -217.365, z: 0}
 --- !u!54 &2607115178230210951
 Rigidbody:
   m_ObjectHideFlags: 0

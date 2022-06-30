@@ -11,8 +11,6 @@ public class RestartScript : MonoBehaviour
     // Update is called once per frame
     public void ResetGame()
     {
-            Debug.Log("restarting");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
     }
 }
