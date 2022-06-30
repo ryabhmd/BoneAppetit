@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10265eab4a524c1f99ca78a405923a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyPrefab: {fileID: 4030193396085406833, guid: ab5e6e6aeb8524c0c835730c246c3c49, type: 3}
+  _enemyPrefab: {fileID: 1714027131795090884, guid: 12ce3b4cd06414566bcc1d9eb103e633, type: 3}
   _uiManager: {fileID: 1281620342}
 --- !u!4 &164328462
 Transform:
