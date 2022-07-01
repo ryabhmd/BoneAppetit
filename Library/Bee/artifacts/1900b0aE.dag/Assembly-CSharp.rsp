@@ -360,6 +360,7 @@
 "Assets/Scripts/CattoScript.cs"
 "Assets/Scripts/DoggoScript.cs"
 "Assets/Scripts/EnemyScript.cs"
+"Assets/Scripts/FireScript.cs"
 "Assets/Scripts/HeartScript.cs"
 "Assets/Scripts/MainSceneScript.cs"
 "Assets/Scripts/MeatScript.cs"

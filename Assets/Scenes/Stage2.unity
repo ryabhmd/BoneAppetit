@@ -397,7 +397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2657352288002601399, guid: 2987a061c464043ea9a9c2d08e970fa3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2657352288002601399, guid: 2987a061c464043ea9a9c2d08e970fa3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2090,7 +2090,6 @@ MonoBehaviour:
   _jumpingSpeed: 10
   _nextJumpTime: 0
   _coolDownTime: 1
-  _bulletPrefab: {fileID: 2997590688313871347, guid: 3c73283db06004a4d8b4c428577bf588, type: 3}
   _doggo: {fileID: 2132277340}
   healths:
   - {fileID: 1835341079}
@@ -3746,6 +3745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnManager: {fileID: 0}
+  _bulletPrefab: {fileID: 0}
 --- !u!4 &4343527226095293 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7041216910980934297, guid: 4027ab5d44c274f5d9fd2729c6f1c1c2, type: 3}
@@ -3764,6 +3764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnManager: {fileID: 164328461}
+  _bulletPrefab: {fileID: 0}
 --- !u!23 &4343527226095302
 MeshRenderer:
   m_ObjectHideFlags: 0

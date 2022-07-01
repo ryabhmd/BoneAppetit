@@ -42,7 +42,6 @@ public class EnemyScript : MonoBehaviour
         // DAMAGE PLAYER if enemy hits player
         if (other.CompareTag("Player"))
         {
-            
             Destroy(this.gameObject);
             _player.Damage();
         }

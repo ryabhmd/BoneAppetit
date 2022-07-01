@@ -36,6 +36,7 @@ public class SpawnManagerFire : MonoBehaviour
         _win = true; 
     }
 
+    // SPAWN FIRE IN STAGE4
     IEnumerator SpawnSystem()
     {
         // SPAWNING

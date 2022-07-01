@@ -6,23 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
-    // variables should be made private; [SerializeField] makes it accessible in Unity
     [SerializeField] private float _speed = 5f;
-
-    // this will be used in the jumping function
     [SerializeField] private Rigidbody RB;
-
     [SerializeField] private float _jumpingSpeed = 10f;
 
     // -- for time delay when jumping --
     [SerializeField] private float _nextJumpTime = 0f;
     [SerializeField] private float _coolDownTime = 0.5f;
-
-    // -- for the bullet
-    [SerializeField] private GameObject _bulletPrefab;
-    private float _fireCoolDownTime = 0f;
-    private float _nextFireTime = 0.5f;
-
+    
     [SerializeField] private DoggoScript _doggo;
 
     // -- for counting damage
@@ -34,9 +25,8 @@ public class PlayerScript : MonoBehaviour
     private MaterialPropertyBlock _mpb;
 
     [SerializeField] private SpawnManager _spawnManager;
-
+    [SerializeField] private SpawnManagerFire _fireSpawnManager;
     [SerializeField] private UIManager _uiManager;
-
     private Scene currentScene;
 
 
@@ -47,7 +37,6 @@ public class PlayerScript : MonoBehaviour
         _lives = healths.Length;
         _uiManager.UpdateLives(_lives);
 
-        // initiate first position
         transform.position = new Vector3(0f, 0f, 0f);
 
         // SET MATERIAL
@@ -58,7 +47,6 @@ public class PlayerScript : MonoBehaviour
             this.GetComponent<Renderer>().GetPropertyBlock(_mpb);
         }
 
-        // instantiate spawn manager GameObject
         _spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
     }
 
@@ -67,17 +55,8 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         PlayerMovement();
-
-        // SPAWN HEART BULLET
-        if (Input.GetKeyDown(KeyCode.E) && _nextFireTime < Time.time)
-        {
-            Instantiate(_bulletPrefab, transform.position + new Vector3(0.65f, 0f, 0f), Quaternion.identity);
-            _nextFireTime = Time.time + _coolDownTime;
-        }
     }
-
-
-// a damage function to be used in EnemyScript when the enemy hits the player
+    
     public void Damage()
     {
         // UPDATE LIVES 
@@ -91,23 +70,22 @@ public class PlayerScript : MonoBehaviour
             // CHANGE MATERIAL 
             _doggo.colorChange();
 
-
             // DEATH
             if (_lives == 0)
             {
-                // STOP SPAWNING
+                // STOP SPAWNING CHOCOLATE BARS
                 if (_spawnManager != null)
                 {
                     _spawnManager.onPlayerDeath();
                     Destroy(this.gameObject);
                 }
-                else
+                // STOP SPAWNING FIRE
+                if (_fireSpawnManager != null)
                 {
-                    Debug.LogError("SpawnManager not assigned");
+                    _fireSpawnManager.onPlayerDeath();
+                    Destroy(this.gameObject);
                 }
-
                 delItems();
-
             }
         }
     }

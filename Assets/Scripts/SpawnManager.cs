@@ -18,25 +18,21 @@ public class SpawnManager : MonoBehaviour
     {
         StartCoroutine(SpawnSystem());
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     
-    // public so we can access it in PlayerScript
+    // INSTANTIATE PLAYER DEATH STATUS
     public void onPlayerDeath()
     {
         _alive = false;
 		_uiManager.gameOver();
     }
 
+    // INSTANTIATE PLAYER WIN STATUS
 	public void onPlayerWin()
     {
         _win = true; 
     }
 
+    // SPAWN CHOCOLATE BARS
     IEnumerator SpawnSystem()
     {
         // SPAWNING

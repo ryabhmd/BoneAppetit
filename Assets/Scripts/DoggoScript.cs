@@ -9,6 +9,11 @@ public class DoggoScript : MonoBehaviour
     private float _colorChannel = 1f;
     [SerializeField] private SpawnManager _spawnManager;
     
+    // -- for the bullet
+    [SerializeField] private GameObject _bulletPrefab;
+    private float _fireCoolDownTime = 1f;
+    private float _nextFireTime = 0.5f;
+    
     void Start()
     {
         // INITIALISE - the material property block
@@ -34,6 +39,13 @@ public class DoggoScript : MonoBehaviour
             }
 
             delItems();
+        }
+        
+        // SPAWN HEART BULLET
+        if (Input.GetKeyDown(KeyCode.E) && _nextFireTime < Time.time)
+        {
+            Instantiate(_bulletPrefab, transform.position + new Vector3(0.5f, 0f, 0f), Quaternion.identity);
+            _nextFireTime = Time.time + _fireCoolDownTime;
         }
     }
     
