@@ -1,5 +1,5 @@
 # BoneAppetit
-First demo unity project followed from the UOS course "Intro to Unity". First demo unity project followed from the UOS course "Intro to Unity".
+First demo unity project followed from the UOS course "Intro to Unity".
 BoneAppetit is a 2D game. The game consists of 4 stages varying in difficulty. Our main character to be controlled is a dog called Doggo.
 
 
