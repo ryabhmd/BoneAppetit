@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -569,7 +569,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0cda7319e1a92ce468dcd0e90b39104d, type: 2}
+  - {fileID: 2100000, guid: bbff89ab83f731443910241876923340, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -714,7 +714,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0cda7319e1a92ce468dcd0e90b39104d, type: 2}
+  - {fileID: 2100000, guid: bbff89ab83f731443910241876923340, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -954,7 +954,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0cda7319e1a92ce468dcd0e90b39104d, type: 2}
+  - {fileID: 2100000, guid: bbff89ab83f731443910241876923340, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1036,7 +1036,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0cda7319e1a92ce468dcd0e90b39104d, type: 2}
+  - {fileID: 2100000, guid: bbff89ab83f731443910241876923340, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2010,13 +2010,13 @@ MonoBehaviour:
   _jumpingSpeed: 10
   _nextJumpTime: 0
   _coolDownTime: 1
-  _bulletPrefab: {fileID: 2997590688313871347, guid: 3c73283db06004a4d8b4c428577bf588, type: 3}
   _doggo: {fileID: 2132277340}
   healths:
   - {fileID: 1835341079}
   - {fileID: 1476667588}
   - {fileID: 26381162}
   _spawnManager: {fileID: 164328460}
+  _fireSpawnManager: {fileID: 0}
   _uiManager: {fileID: 1281620342}
 --- !u!65 &867331708
 BoxCollider:
@@ -2801,6 +2801,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _livestext: {fileID: 1621339426}
+  _mainmenutext: {fileID: 0}
+  _monsterlivestext: {fileID: 0}
   _stagestext: {fileID: 0}
   _statustext: {fileID: 216291712}
   _restarttext: {fileID: 27051840}
@@ -2980,7 +2982,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0cda7319e1a92ce468dcd0e90b39104d, type: 2}
+  - {fileID: 2100000, guid: bbff89ab83f731443910241876923340, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3666,6 +3668,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnManager: {fileID: 0}
+  _fireSpawnManager: {fileID: 0}
+  _bulletPrefab: {fileID: 0}
 --- !u!4 &4343527226095293 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7041216910980934297, guid: 4027ab5d44c274f5d9fd2729c6f1c1c2, type: 3}
@@ -3684,6 +3688,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnManager: {fileID: 164328461}
+  _fireSpawnManager: {fileID: 0}
+  _bulletPrefab: {fileID: 0}
 --- !u!23 &4343527226095302
 MeshRenderer:
   m_ObjectHideFlags: 0
