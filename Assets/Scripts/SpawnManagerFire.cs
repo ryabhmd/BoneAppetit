@@ -19,21 +19,16 @@ public class SpawnManagerFire : MonoBehaviour
         StartCoroutine(SpawnSystem());
     }
 
-    // Update is called once per frame
-    void Update()
+    // STOP SPAWNING IF YOU WIN
+    public void onPlayerWin()
     {
-        
+        _win = true; 
     }
     
     public void onPlayerDeath()
     {
         _alive = false;
         _uiManager.gameOver();
-    }
-
-    public void onPlayerWin()
-    {
-        _win = true; 
     }
 
     // SPAWN FIRE IN STAGE4

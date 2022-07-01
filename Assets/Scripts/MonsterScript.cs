@@ -6,6 +6,7 @@ public class MonsterScript : MonoBehaviour
 {
     [SerializeField] private float _monsterSpeed = 6f;
     [SerializeField] private UIManager _uiManager;
+    [SerializeField] private SpawnManagerFire _fireSpawnManager;
     private bool movingDown;
     private PlayerScript _player;
     private int _monsterLives;
@@ -66,6 +67,7 @@ public class MonsterScript : MonoBehaviour
             {   
                 Destroy(this.gameObject);
                 _uiManager.win();
+                _fireSpawnManager.onPlayerWin();
             }
         }
     }
