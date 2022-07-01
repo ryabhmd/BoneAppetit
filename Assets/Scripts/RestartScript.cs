@@ -13,4 +13,9 @@ public class RestartScript : MonoBehaviour
     {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(4);
+    }
 }

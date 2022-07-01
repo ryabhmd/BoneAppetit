@@ -10,6 +10,8 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private Text _livestext;
     [SerializeField]
+    private Text _mainmenutext;
+    [SerializeField]
     private Text _monsterlivestext;
     [SerializeField] 
     private Text _stagestext;
@@ -44,7 +46,7 @@ public class UIManager : MonoBehaviour
 
 	public void win()
 	{
-		_statustext.text = "You win!! :)";
-		_restarttext.text = "Click here to restart";
+		_statustext.text = "You win!";
+		_mainmenutext.text = "Back to Main Menu";
 	}
 }

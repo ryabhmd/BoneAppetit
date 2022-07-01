@@ -65,6 +65,7 @@ public class MonsterScript : MonoBehaviour
             if (_monsterLives == 0)
             {   
                 Destroy(this.gameObject);
+                _uiManager.win();
             }
         }
     }
