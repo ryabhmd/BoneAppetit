@@ -5,18 +5,17 @@ using UnityEngine;
 public class MonsterScript : MonoBehaviour
 {
     [SerializeField] private float _monsterSpeed = 6f;
+    [SerializeField] private UIManager _uiManager;
     private bool movingDown;
     private PlayerScript _player;
-
-    // -- for counting damage
-    private int _monster_lives=6;
-    public GameObject[] healths;
-
-
+    private int _monsterLives;
+    
+    
     
     // Start is called before the first frame update
     void Start()
     {
+        _monsterLives = 5;
         movingDown = true;
         _player = GameObject.Find("Player").GetComponent<PlayerScript>();
     }
@@ -26,7 +25,8 @@ public class MonsterScript : MonoBehaviour
     {
         MonsterMovement();
     }
-
+    
+    // MAKE MONSTER CONSTANTLY MOVE UP AND DOWN
     private void MonsterMovement()
     {
         if (transform.position.y <= -4)
@@ -51,44 +51,33 @@ public class MonsterScript : MonoBehaviour
         }
 
     }
-    // a damage function to be used  when the player hits the monster
-    public void Damage()
+    // DAMAGE MONSTER IF HIT BY A HEART BULLET
+    private void MonsterDamage()
     {
         // UPDATE LIVES 
-        if (_monster_lives >= 1)
+        if (_monsterLives >= 1)
         {
-            _monster_lives--;
-            healths[_monster_lives].SetActive(false);
-            Debug.Log("Damage -1 Lives monster: " + _monster_lives);
-
-
-
+            _monsterLives--;
+            Debug.Log("Damage -1 Lives monster: " + _monsterLives);
+            _uiManager.UpdateMonsterLives(_monsterLives);
 
             // DEATH
-            if (_monster_lives == 0)
+            if (_monsterLives == 0)
             {   
                 Destroy(this.gameObject);
             }
-        
         }
     }
     void OnTriggerEnter(Collider other)
     {
-        // DESTROY monster + BULLET if monster collides(6 times) with bullet
+        // DESTROY BULLET + DAMAGE MONSTER if monster collides with bullet
         if (other.CompareTag("Bullet"))
         {
+            Debug.Log("monster collided with bullet");
             Destroy(other.gameObject);
-            this.Damage();
-
+            this.MonsterDamage();
         }
 
-        // DAMAGE PLAYER if monster hits player
-        if (other.CompareTag("Player"))
-        {
-            
-            Destroy(this.gameObject);
-            _player.Damage();
-        }
     }
   
 }

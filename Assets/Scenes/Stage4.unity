@@ -279,6 +279,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27051838}
   m_CullTransparentMesh: 1
+--- !u!1 &119522794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 283050964774657744, guid: d28c88d0b0ea241dca849fa47fc0d7a3, type: 3}
+  m_PrefabInstance: {fileID: 282210790279694010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &119522799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119522794}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6782777, y: 1.5044897, z: 1}
+  m_Center: {x: -0.02292246, y: 0.61659783, z: -9.313226e-10}
 --- !u!1 &216291710
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,6 +742,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742697736}
   m_CullTransparentMesh: 1
+--- !u!1 &799113964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 799113965}
+  - component: {fileID: 799113967}
+  - component: {fileID: 799113966}
+  m_Layer: 5
+  m_Name: MonsterLives
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &799113965
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799113964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1281620341}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 137, y: 156}
+  m_SizeDelta: {x: 244, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &799113966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799113964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8773585, g: 0.045523323, b: 0.045523323, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
+    m_FontSize: 23
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Monster lives: 5'
+--- !u!222 &799113967
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799113964}
+  m_CullTransparentMesh: 1
 --- !u!1 &828173709 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1515770819078365170, guid: 4027ab5d44c274f5d9fd2729c6f1c1c2, type: 3}
@@ -766,7 +864,7 @@ MonoBehaviour:
   _jumpingSpeed: 10
   _nextJumpTime: 0
   _coolDownTime: 1
-  _doggo: {fileID: 2132277340}
+  _doggo: {fileID: 0}
   healths:
   - {fileID: 1835341079}
   - {fileID: 1476667588}
@@ -1342,6 +1440,7 @@ RectTransform:
   - {fileID: 216291711}
   - {fileID: 940959608}
   - {fileID: 2014428349}
+  - {fileID: 799113965}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1363,6 +1462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _livestext: {fileID: 1621339426}
+  _monsterlivestext: {fileID: 799113966}
   _stagestext: {fileID: 0}
   _statustext: {fileID: 216291712}
   _restarttext: {fileID: 27051840}
@@ -1848,7 +1948,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 31.7858, y: 156}
+  m_AnchoredPosition: {x: 31.7858, y: 197}
   m_SizeDelta: {x: 223.5717, y: 26.5637}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2014428350
@@ -2062,6 +2162,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2050251246376567849, guid: d28c88d0b0ea241dca849fa47fc0d7a3, type: 3}
+      propertyPath: _uiManager
+      value: 
+      objectReference: {fileID: 1281620342}
+    - target: {fileID: -2050251246376567849, guid: d28c88d0b0ea241dca849fa47fc0d7a3, type: 3}
+      propertyPath: healths.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 283050964774657744, guid: d28c88d0b0ea241dca849fa47fc0d7a3, type: 3}
       propertyPath: m_Name
       value: Monster

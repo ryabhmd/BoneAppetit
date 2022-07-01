@@ -46,7 +46,7 @@ public class PlayerScript : MonoBehaviour
             _mpb.Clear();
             this.GetComponent<Renderer>().GetPropertyBlock(_mpb);
         }
-
+        
         _spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
     }
 

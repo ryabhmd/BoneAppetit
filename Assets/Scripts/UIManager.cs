@@ -9,6 +9,8 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField]
     private Text _livestext;
+    [SerializeField]
+    private Text _monsterlivestext;
     [SerializeField] 
     private Text _stagestext;
 	[SerializeField]
@@ -20,6 +22,12 @@ public class UIManager : MonoBehaviour
     {
         // UPDATE TEXT 
         _livestext.text = "Lives: " + health;
+    }
+    
+    public void UpdateMonsterLives(int health)
+    {
+	    // UPDATE TEXT 
+	    _monsterlivestext.text = "Monster Lives: " + health;
     }
 
 	public void UpdateStages(int stage)
