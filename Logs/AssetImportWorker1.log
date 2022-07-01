@@ -15,7 +15,7 @@ C:/Users/yun20/BoneAppetit
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-62561
+59108
 Successfully changed project path to: C:/Users/yun20/BoneAppetit
 C:/Users/yun20/BoneAppetit
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/yun20/BoneAppetit
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 242.96 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 230.24 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -63,244 +63,186 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56608
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56660
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.053939 seconds.
+Registered in 0.067333 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 233.38 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 195.34 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.718 seconds
+- Completed reload, in  2.088 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1719ms)
-		BeginReloadAssembly (270ms)
+	ReloadAssembly (2090ms)
+		BeginReloadAssembly (386ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (1119ms)
-			LoadAssemblies (260ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (1258ms)
+			LoadAssemblies (370ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (226ms)
+			SetupTypeCache (306ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (689ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (724ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (38ms)
+				InitializePlatformSupportModulesInManaged (37ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (234ms)
+				RefreshPlugins (196ms)
 				BeforeProcessingInitializeOnLoad (3ms)
-				ProcessInitializeOnLoadAttributes (305ms)
-				ProcessInitializeOnLoadMethodAttributes (109ms)
+				ProcessInitializeOnLoadAttributes (348ms)
+				ProcessInitializeOnLoadMethodAttributes (139ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.027937 seconds.
+Registered in 0.039515 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\yun20\BoneAppetit\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\yun20\BoneAppetit\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.686 seconds
+- Completed reload, in  3.604 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2687ms)
-		BeginReloadAssembly (375ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (15ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (2008ms)
-			LoadAssemblies (334ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (609ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (116ms)
-			SetupLoadedEditorAssemblies (943ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (24ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (228ms)
-				ProcessInitializeOnLoadAttributes (544ms)
-				ProcessInitializeOnLoadMethodAttributes (91ms)
-				AfterProcessingInitializeOnLoad (54ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (28ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 1.84 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3511 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 30 unused Assets / (112.2 KB). Loaded Objects now: 3984.
-Memory consumption went from 125.6 MB to 125.5 MB.
-Total: 7.918200 ms (FindLiveObjects: 0.614500 ms CreateObjectMapping: 0.554600 ms MarkObjects: 6.514200 ms  DeleteObjects: 0.232800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 329311.300393 seconds.
-  path: Assets/ExternalAssets/chocolate_bar.blend
-  artifactKey: Guid(958d5378f612b4d5abe4c266e99d256d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalAssets/chocolate_bar.blend using Guid(958d5378f612b4d5abe4c266e99d256d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1beb8d9b8df5da0adabdc34ff10774b') in 0.498293 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.034357 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\yun20\BoneAppetit\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\yun20\BoneAppetit\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.560 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4562ms)
-		BeginReloadAssembly (721ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (36ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (122ms)
-		EndReloadAssembly (3390ms)
-			LoadAssemblies (562ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (809ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (171ms)
-			SetupLoadedEditorAssemblies (1695ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (82ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (364ms)
-				ProcessInitializeOnLoadAttributes (954ms)
-				ProcessInitializeOnLoadMethodAttributes (158ms)
-				AfterProcessingInitializeOnLoad (132ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (92ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 6.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (79.1 KB). Loaded Objects now: 4029.
-Memory consumption went from 128.9 MB to 128.8 MB.
-Total: 4.442500 ms (FindLiveObjects: 0.396400 ms CreateObjectMapping: 0.139200 ms MarkObjects: 3.787100 ms  DeleteObjects: 0.118300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 256.755019 seconds.
-  path: Assets/Prefabs/chocolate_bar.prefab
-  artifactKey: Guid(12ce3b4cd06414566bcc1d9eb103e633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/chocolate_bar.prefab using Guid(12ce3b4cd06414566bcc1d9eb103e633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a16f9a92966aaa0ad400bdeae49233d') in 0.133187 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Prefabs/Doggo.prefab
-  artifactKey: Guid(4027ab5d44c274f5d9fd2729c6f1c1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Doggo.prefab using Guid(4027ab5d44c274f5d9fd2729c6f1c1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b06ffe30ca36b2315199750ceaacf47') in 0.057883 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Prefabs/Fire.prefab
-  artifactKey: Guid(ac28516125b264cb1afef3868e60b190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Fire.prefab using Guid(ac28516125b264cb1afef3868e60b190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd30237bada7c36dd0c704b76c30de2da') in 0.055241 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Prefabs/Heart_bullet.prefab
-  artifactKey: Guid(f7415571ab3014ee6853cb6d43c4c8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Heart_bullet.prefab using Guid(f7415571ab3014ee6853cb6d43c4c8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35178ae6e27b45e87bfbb816e4c835f') in 0.034676 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000097 seconds.
-  path: Assets/Prefabs/Enemy.prefab
-  artifactKey: Guid(297a8548a1fb64198bfeca183ec9c794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy.prefab using Guid(297a8548a1fb64198bfeca183ec9c794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4b8b2342375a4185b8e64549573c3a') in 0.040392 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.036488 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\yun20\BoneAppetit\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\yun20\BoneAppetit\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.014 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3015ms)
-		BeginReloadAssembly (362ms)
+	ReloadAssembly (3606ms)
+		BeginReloadAssembly (443ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (14ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (61ms)
-		EndReloadAssembly (2272ms)
-			LoadAssemblies (405ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (2797ms)
+			LoadAssemblies (457ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (658ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (97ms)
-			SetupLoadedEditorAssemblies (946ms)
+			SetupTypeCache (835ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (148ms)
+			SetupLoadedEditorAssemblies (1264ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (52ms)
+				InitializePlatformSupportModulesInManaged (38ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (212ms)
-				ProcessInitializeOnLoadAttributes (500ms)
-				ProcessInitializeOnLoadMethodAttributes (102ms)
-				AfterProcessingInitializeOnLoad (77ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (317ms)
+				ProcessInitializeOnLoadAttributes (733ms)
+				ProcessInitializeOnLoadMethodAttributes (107ms)
+				AfterProcessingInitializeOnLoad (65ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (54ms)
+			AwakeInstancesAfterBackupRestoration (35ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 6.68 ms, found 3 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
+Refreshing native plugins compatible for Editor in 1.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3511 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (112.2 KB). Loaded Objects now: 3984.
+Memory consumption went from 125.6 MB to 125.5 MB.
+Total: 11.056400 ms (FindLiveObjects: 0.857900 ms CreateObjectMapping: 0.500900 ms MarkObjects: 9.410300 ms  DeleteObjects: 0.283600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 337703.286623 seconds.
+  path: Assets/ExternalAssets/VoxelAnimals/Assets/Prefabs/Flower.prefab
+  artifactKey: Guid(2bc164917408ec6408959ca79846a6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/VoxelAnimals/Assets/Prefabs/Flower.prefab using Guid(2bc164917408ec6408959ca79846a6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47d1a3e16a01cdfca9c1b5f4a78535cc') in 0.463317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/ExternalAssets/VoxelAnimals/Assets/Prefabs/Chicken.prefab
+  artifactKey: Guid(aa3784adb6428184e991be2d60ee0cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/VoxelAnimals/Assets/Prefabs/Chicken.prefab using Guid(aa3784adb6428184e991be2d60ee0cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a8db9197b8251275d582a625056aea') in 0.120967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/ExternalAssets/VoxelAnimals/Assets/Prefabs/Tree2.prefab
+  artifactKey: Guid(9191e921815f6c946a6ec587468d5343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/VoxelAnimals/Assets/Prefabs/Tree2.prefab using Guid(9191e921815f6c946a6ec587468d5343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b22d91f3b2b7fdcf36f4fa172daf8df') in 0.070630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/ExternalAssets/VoxelAnimals/Assets/Prefabs/Penguin.prefab
+  artifactKey: Guid(2884e6b071e1c2a4faef2e7fd67b481e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/VoxelAnimals/Assets/Prefabs/Penguin.prefab using Guid(2884e6b071e1c2a4faef2e7fd67b481e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64423dc18a4af5e72d3045f2a66dd627') in 0.111386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/ExternalAssets/VoxelAnimals/Assets/Prefabs
+  artifactKey: Guid(35b964da73679214483465392cd20bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/VoxelAnimals/Assets/Prefabs using Guid(35b964da73679214483465392cd20bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dfc1c9176a10e917f4ca641e1411325') in 0.020978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/ExternalAssets/VoxelAnimals/Assets/Prefabs/Lion.prefab
+  artifactKey: Guid(d2edcf95960b81249bf3f4a30ad1a908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/VoxelAnimals/Assets/Prefabs/Lion.prefab using Guid(d2edcf95960b81249bf3f4a30ad1a908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8599805924b56e47b47e47896e840674') in 0.107702 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.049406 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\yun20\BoneAppetit\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\yun20\BoneAppetit\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.370 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4372ms)
+		BeginReloadAssembly (743ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (19ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (149ms)
+		EndReloadAssembly (3254ms)
+			LoadAssemblies (694ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (842ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (182ms)
+			SetupLoadedEditorAssemblies (1507ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (74ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (316ms)
+				ProcessInitializeOnLoadAttributes (893ms)
+				ProcessInitializeOnLoadMethodAttributes (141ms)
+				AfterProcessingInitializeOnLoad (76ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (47ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (79.2 KB). Loaded Objects now: 4034.
-Memory consumption went from 129.0 MB to 128.9 MB.
-Total: 7.038800 ms (FindLiveObjects: 0.466900 ms CreateObjectMapping: 0.371200 ms MarkObjects: 5.994400 ms  DeleteObjects: 0.204400 ms)
+Unloading 19 unused Assets / (79.2 KB). Loaded Objects now: 3993.
+Memory consumption went from 128.6 MB to 128.5 MB.
+Total: 7.442100 ms (FindLiveObjects: 0.711600 ms CreateObjectMapping: 0.427800 ms MarkObjects: 6.083700 ms  DeleteObjects: 0.216100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -316,49 +258,107 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.029280 seconds.
+Registered in 0.040473 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\yun20\BoneAppetit\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\yun20\BoneAppetit\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.412 seconds
+- Completed reload, in  4.255 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3414ms)
-		BeginReloadAssembly (739ms)
+	ReloadAssembly (4258ms)
+		BeginReloadAssembly (875ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (32ms)
+			DisableScriptedObjects (19ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (121ms)
-		EndReloadAssembly (2224ms)
-			LoadAssemblies (583ms)
+			CreateAndSetChildDomain (145ms)
+		EndReloadAssembly (2937ms)
+			LoadAssemblies (783ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (801ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (95ms)
-			SetupLoadedEditorAssemblies (888ms)
+			SetupTypeCache (833ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (126ms)
+			SetupLoadedEditorAssemblies (1294ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (44ms)
+				InitializePlatformSupportModulesInManaged (71ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (199ms)
-				ProcessInitializeOnLoadAttributes (515ms)
-				ProcessInitializeOnLoadMethodAttributes (78ms)
-				AfterProcessingInitializeOnLoad (50ms)
-				EditorAssembliesLoaded (0ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (310ms)
+				ProcessInitializeOnLoadAttributes (709ms)
+				ProcessInitializeOnLoadMethodAttributes (115ms)
+				AfterProcessingInitializeOnLoad (82ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (35ms)
+			AwakeInstancesAfterBackupRestoration (44ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 7.43 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 33.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3493 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (79.4 KB). Loaded Objects now: 4037.
-Memory consumption went from 129.0 MB to 128.9 MB.
-Total: 7.474400 ms (FindLiveObjects: 0.516400 ms CreateObjectMapping: 0.532100 ms MarkObjects: 6.272100 ms  DeleteObjects: 0.150900 ms)
+Unloading 19 unused Assets / (79.3 KB). Loaded Objects now: 3996.
+Memory consumption went from 128.6 MB to 128.5 MB.
+Total: 13.416300 ms (FindLiveObjects: 0.895000 ms CreateObjectMapping: 1.021000 ms MarkObjects: 11.127500 ms  DeleteObjects: 0.368100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.046255 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\yun20\BoneAppetit\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\yun20\BoneAppetit\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.944 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3947ms)
+		BeginReloadAssembly (758ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (25ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (147ms)
+		EndReloadAssembly (2769ms)
+			LoadAssemblies (610ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (810ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (137ms)
+			SetupLoadedEditorAssemblies (1275ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (63ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (284ms)
+				ProcessInitializeOnLoadAttributes (732ms)
+				ProcessInitializeOnLoadMethodAttributes (121ms)
+				AfterProcessingInitializeOnLoad (70ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (43ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3493 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (79.3 KB). Loaded Objects now: 3999.
+Memory consumption went from 128.6 MB to 128.5 MB.
+Total: 8.980500 ms (FindLiveObjects: 0.708300 ms CreateObjectMapping: 0.187300 ms MarkObjects: 7.848300 ms  DeleteObjects: 0.232900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
