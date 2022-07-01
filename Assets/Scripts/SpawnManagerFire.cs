@@ -27,6 +27,7 @@ public class SpawnManagerFire : MonoBehaviour
     
     public void onPlayerDeath()
     {
+        Debug.Log("entered on player death in spawn manager fire");
         _alive = false;
         _uiManager.gameOver();
     }

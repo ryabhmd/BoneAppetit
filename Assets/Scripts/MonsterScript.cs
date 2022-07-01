@@ -19,6 +19,7 @@ public class MonsterScript : MonoBehaviour
         _monsterLives = 5;
         movingDown = true;
         _player = GameObject.Find("Player").GetComponent<PlayerScript>();
+        _fireSpawnManager = GameObject.Find("SpawnManagerFire").GetComponent<SpawnManagerFire>();
     }
 
     // Update is called once per frame
@@ -76,7 +77,6 @@ public class MonsterScript : MonoBehaviour
         // DESTROY BULLET + DAMAGE MONSTER if monster collides with bullet
         if (other.CompareTag("Bullet"))
         {
-            Debug.Log("monster collided with bullet");
             Destroy(other.gameObject);
             this.MonsterDamage();
         }

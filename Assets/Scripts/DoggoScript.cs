@@ -8,6 +8,7 @@ public class DoggoScript : MonoBehaviour
     private MaterialPropertyBlock _mpb;
     private float _colorChannel = 1f;
     [SerializeField] private SpawnManager _spawnManager;
+    [SerializeField] private SpawnManagerFire _fireSpawnManager;
     
     // -- for the bullet
     [SerializeField] private GameObject _bulletPrefab;
@@ -37,6 +38,12 @@ public class DoggoScript : MonoBehaviour
                 _spawnManager.onPlayerDeath();
                 Destroy(this.gameObject);
             }
+            // STOP SPAWNING
+            if (_fireSpawnManager != null)
+            {
+                _fireSpawnManager.onPlayerDeath();
+                Destroy(this.gameObject);
+            }
 
             delItems();
         }
@@ -51,7 +58,7 @@ public class DoggoScript : MonoBehaviour
     
     public void delItems()
     {
-        // DELETE ENEMYS IN HIERACHY
+        // DELETE ENEMIES IN HIERACHY
         foreach (Transform child in _spawnManager.transform)
         {
             Destroy(child.gameObject);

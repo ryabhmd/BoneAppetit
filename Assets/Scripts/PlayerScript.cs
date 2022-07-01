@@ -47,7 +47,9 @@ public class PlayerScript : MonoBehaviour
             this.GetComponent<Renderer>().GetPropertyBlock(_mpb);
         }
         
+        // GET REGULAR SPAWN MANAGER (STAGES 1-3) + FIRE SPAWN MANAGER (STAGE 4)
         _spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+        _fireSpawnManager = GameObject.Find("SpawnManagerFire").GetComponent<SpawnManagerFire>();
     }
 
 
@@ -69,24 +71,24 @@ public class PlayerScript : MonoBehaviour
 
             // CHANGE MATERIAL 
             _doggo.colorChange();
+        }
 
-            // DEATH
-            if (_lives == 0)
+        // DEATH
+        if (_lives == 0)
+        {
+            // STOP SPAWNING CHOCOLATE BARS
+            if (_spawnManager != null)
             {
-                // STOP SPAWNING CHOCOLATE BARS
-                if (_spawnManager != null)
-                {
-                    _spawnManager.onPlayerDeath();
-                    Destroy(this.gameObject);
-                }
-                // STOP SPAWNING FIRE
-                if (_fireSpawnManager != null)
-                {
-                    _fireSpawnManager.onPlayerDeath();
-                    Destroy(this.gameObject);
-                }
-                delItems();
+                _spawnManager.onPlayerDeath();
+                Destroy(this.gameObject);
             }
+            // STOP SPAWNING FIRE
+            if (_fireSpawnManager != null)
+            {
+                _fireSpawnManager.onPlayerDeath();
+                Destroy(this.gameObject);
+            }
+            delItems();
         }
     }
 

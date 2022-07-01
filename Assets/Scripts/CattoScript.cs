@@ -41,7 +41,6 @@ public class CattoScript : MonoBehaviour
             transform.Translate(Vector3.back * _cattospeed * Time.deltaTime);
             Vector3 movement = new Vector3(0.1f, 0.0f, 0);
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
-            anim.SetInteger("Walk", 0);
         }
         
         if(!movingLeft)
@@ -49,7 +48,6 @@ public class CattoScript : MonoBehaviour
             transform.Translate(Vector3.forward * _cattospeed * Time.deltaTime);
             Vector3 movement = new Vector3(0.1f, 0.0f, 0);
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
-            anim.SetInteger("Walk", 1);
         }
 
     }
@@ -58,11 +56,8 @@ public class CattoScript : MonoBehaviour
     {    
         // DAMAGE PLAYER if catto hits the player
         if (collision.gameObject.tag == "Player")
-
         {  
             _player.Damage();
         }
     }
-
-
 } 

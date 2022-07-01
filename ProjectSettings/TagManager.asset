@@ -9,6 +9,9 @@ TagManager:
   - SpawnManager
   - Heart
   - Catto
+  - DestruirDecoraCion
+  - Bloque
+  - SpawnManagerFire
   layers:
   - Default
   - TransparentFX
