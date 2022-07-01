@@ -54,13 +54,15 @@ public class CattoScript : MonoBehaviour
 
     }
     
-    void OnTriggerEnter(Collider other)
-    {
-        // DAMAGE PLAYER if catto hits player
-        if (other.CompareTag("Player"))
-        {
+    void OnCollisionEnter(Collision collision)
+    {    
+        // DAMAGE PLAYER if catto hits the player
+        if (collision.gameObject.tag == "Player")
+
+        {  
             _player.Damage();
         }
     }
-}
 
+
+} 
