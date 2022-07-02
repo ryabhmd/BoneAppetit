@@ -13,4 +13,19 @@ public class MainSceneScript : MonoBehaviour
         SceneManager.LoadScene("Stage1");
     }
     
+    public void onClickControlsButton()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+    
+    public void backToMainPage()
+    {
+        SceneManager.LoadScene("MainPage");
+    }
+    
+    public void onClickExitButton()
+    {
+        Application.Quit();
+    }
+    
 }
