@@ -16,6 +16,6 @@ public class RestartScript : MonoBehaviour
     
     public void BackToMenu()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("MainPage");
     }
 }
