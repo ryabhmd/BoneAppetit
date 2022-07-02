@@ -833,7 +833,7 @@ MonoBehaviour:
   _jumpingSpeed: 10
   _nextJumpTime: 0
   _coolDownTime: 1
-  _doggo: {fileID: 0}
+  _doggo: {fileID: 2132277340}
   healths:
   - {fileID: 1835341079}
   - {fileID: 1476667588}

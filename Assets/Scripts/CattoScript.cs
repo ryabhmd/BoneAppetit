@@ -10,6 +10,7 @@ public class CattoScript : MonoBehaviour
     private float initial_position;
     private PlayerScript _player;
     Animator anim;
+    [SerializeField] private AudioSource tickSource;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class CattoScript : MonoBehaviour
         movingLeft = true;
         initial_position = transform.position.x;
         _player = GameObject.Find("Player").GetComponent<PlayerScript>();
+        tickSource = GetComponent<AudioSource> ();
     }
 
     // Update is called once per frame
@@ -57,6 +59,7 @@ public class CattoScript : MonoBehaviour
         // DAMAGE PLAYER if catto hits the player
         if (other.CompareTag("Player"))
         {  
+            tickSource.Play();
             _player.Damage();
         }
     }
