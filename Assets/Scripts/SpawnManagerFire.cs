@@ -38,7 +38,7 @@ public class SpawnManagerFire : MonoBehaviour
         // SPAWNING
         while (_alive && !_win)
         {
-            Instantiate(_firePrefab, new Vector3(3.712f, Random.Range(-4f, 1f), 0f), Quaternion.identity, this.transform);
+            Instantiate(_firePrefab, new Vector3(4f, Random.Range(-4f, 4f), 0f), Quaternion.identity, this.transform);
             yield return new WaitForSeconds(_delay);
         }
 

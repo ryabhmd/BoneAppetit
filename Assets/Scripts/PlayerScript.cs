@@ -48,8 +48,14 @@ public class PlayerScript : MonoBehaviour
         }
         
         // GET REGULAR SPAWN MANAGER (STAGES 1-3) + FIRE SPAWN MANAGER (STAGE 4)
-        _spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
-        _fireSpawnManager = GameObject.Find("SpawnManagerFire").GetComponent<SpawnManagerFire>();
+        if (currentScene.buildIndex == 3)
+        {
+            _fireSpawnManager = GameObject.Find("SpawnManagerFire").GetComponent<SpawnManagerFire>();
+        }
+        else
+        {
+            _spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+        }
     }
 
 
