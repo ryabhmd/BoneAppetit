@@ -73,17 +73,17 @@ In the final level, Doggo has to fight the monster where he can shoot him with h
 </p>
   
 
-### Demo
+## Demo
 The demo video could be found [here](https://www.youtube.com/watch?v=HCgkZ9lhsUE).
   
-### Assets
+## Assets
 We got all assets for free from the Asset Store, except for the chocolate bar, which we made on [blender](https://www.blender.org/)
   
   <p align="center">
   <img src="https://user-images.githubusercontent.com/49908515/176949859-ea6dbb79-5b98-49b7-b6d2-7e5627ed6ae7.PNG" />
 </p>
   
-### Download links
+## Download links
   - [Windows version](https://drive.google.com/drive/folders/1WwhcHsHj-cTA_PGmGA5q4hrlkfv2HRpH?usp=sharing)
   - [Mac version](https://drive.google.com/drive/folders/1OS_66ZSZxR_VoIsPoB1Iq5Sts6zagfEj?usp=sharing)
   
