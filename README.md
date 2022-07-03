@@ -84,6 +84,6 @@ We got all assets for free from the Asset Store, except for the chocolate bar, w
 </p>
   
 ### Download links
-  - [Windows version](https://drive.google.com/drive/folders/1WwhcHsHj-cTA_PGmGA5q4hrlkfv2HRpH?usp=sharing): 
+  - [Windows version](https://drive.google.com/drive/folders/1WwhcHsHj-cTA_PGmGA5q4hrlkfv2HRpH?usp=sharing)
   - [Mac version](https://drive.google.com/drive/folders/1OS_66ZSZxR_VoIsPoB1Iq5Sts6zagfEj?usp=sharing)
   
